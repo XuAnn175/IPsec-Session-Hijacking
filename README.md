@@ -32,11 +32,11 @@ IPsec is a suite of protocols designed to secure Internet Protocol (IP) communic
 
 ### *Case Study: VoWi-Fi with IPsec Protection*
 
-##### IPSec protection over VoWi-Fi traffic traversing public domain
+#### IPSec protection over VoWi-Fi traffic traversing public domain
 
 ![img](https://imgur.com/ir83SQj.jpg)
 
-##### Attacker can manipulate IMS call service operation (IMS vulnerabilities can be exposed)
+#### Attacker can manipulate IMS call service operation (IMS vulnerabilities can be exposed)
 
 ![img](https://imgur.com/DtyQFvp.jpg)
 
