@@ -49,7 +49,7 @@ IPsec is a suite of protocols designed to secure Internet Protocol (IP) communic
 
 ### *Environment Setup*
 
-##### Build the project image
+#### Build the project image
 
 You need to install the docker at first,
 
@@ -59,7 +59,7 @@ and build the project image with
 sudo docker build -t ipsec-hijacking -f ipsec-hijacking.Dockerfile .
 ```
 
-##### Run the project containers
+#### Run the project containers
 
 Run the server and client with
 
@@ -69,7 +69,7 @@ sudo docker compose -f ipsec-hijacking-docker-compose.yml up -d
 
 ### *Usage*
 
-##### Run the server
+#### Run the server
 
 In the server container,
 
@@ -80,7 +80,7 @@ docker exec -it server bash
 ./server 1111
 ```
 
-##### Run the client
+#### Run the client
 
 In the client container,
 
@@ -91,7 +91,7 @@ docker exec -it client bash
 ./client 172.18.100.254 1111 2222
 ```
 
-##### Run the hijacking tool
+#### Run the hijacking tool
 
 In the client container,
 
@@ -105,7 +105,7 @@ make
 ./hijack eth0
 ```
 
-##### Stop and remove the containers
+#### Stop and remove the containers
 
 Remove the docker network (csc-project1-docker_IPSec)
 
@@ -115,7 +115,7 @@ and the client/server containers with
 sudo docker compose -f ipsec-hijacking-docker-compose.yml down
 ```
 
-##### Remove the image
+#### Remove the image
 
 Remove the docker image with
 
@@ -123,7 +123,7 @@ Remove the docker image with
 docker rmi ipsec-hijacking
 ```
 
-##### Restart the container
+#### Restart the container
 
 If the container exited after rebooting,
 restart the container with
@@ -244,7 +244,7 @@ docker restart $container_name
 
 ### *Environment*
 
-##### IP address
+#### IP address
 
 In the default setting of the docker-compose,
 
@@ -253,6 +253,6 @@ In the default setting of the docker-compose,
 - external port to access SSH in the server is 3333
 - external port to access SSH in the client is 4444
 
-##### Configuration
+#### Configuration
 
 The script "src/scripts/config.sh" will depend on the setting of the docker-compose
