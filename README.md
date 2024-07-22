@@ -107,7 +107,7 @@ make
 
 #### Stop and remove the containers
 
-Remove the docker network (csc-project1-docker_IPSec)
+Remove the docker network 
 
 and the client/server containers with
 
